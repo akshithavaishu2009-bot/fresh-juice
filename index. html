@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dum Biryani</title>
+
+    <style>
+
+        body{
+            margin:0;
+            background-color:#993383;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px;
+            background-color:#49bbd8;
+           
+        }
+
+        #link{
+            display:flex;
+            align-items:center;
+            gap:20px;
+        }
+
+        #link img{
+            width:70px;
+        }
+
+        ul{
+            display:flex;
+            list-style:none;
+           
+            gap:30px;
+        }
+
+        ul li a{
+            text-decoration:none;
+            font-size:20px;
+        }
+
+        .dev{
+            text-align:center;
+            font-size:18px;
+            background-color:rgb(95, 58, 13);
+            padding:10px;
+        }
+
+        #pic{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            flex-wrap:wrap;
+            margin-top:30px;
+        }
+
+        #pic img{
+            width:300px;
+        }
+
+        #pic p{
+            font-size:90px;
+            color:crimson;
+        }
+
+        main p{
+            font-size:22px;
+            padding:20px;
+            line-height:45px;
+        }
+
+        video{
+            width:400px;
+            margin-left:20px;
+        }
+
+        audio{
+            display:block;
+            margin:20px;
+        }
+
+        .card{
+            display:grid;
+           grid-template-columns: repeat(3,4fr);
+            gap:20px;
+            padding:20px;
+        }
+
+        .card1{
+            background-color:rgb(88, 10, 10);
+          
+            text-align:center;
+            border-radius:10px;
+        }
+
+        .card1 img{
+            width:150px;
+        }
+
+        button{
+            padding:10px 20px;
+            border:none;
+            background-color:orange;
+            cursor:not-allowed;
+        }
+
+        form{
+            padding:20px;
+        }
+
+        fieldset{
+            padding:20px;
+        }
+
+        footer{
+            background-color:rgb(7, 131, 94);
+            padding:20px;
+            text-align:center;
+        }
+
+        #menu{
+            display:none;
+        }
+
+        #icon{
+            display:none;
+            flex-direction:column;
+            gap:5px;
+        }
+
+        #icon span{
+            width:25px;
+            height:3px;
+            background-color:rgb(7, 94, 50);
+        }
+
+        @media(max-width:600px){
+
+            nav{
+                flex-wrap:wrap;
+            }
+
+            #icon{
+                display:flex;
+            }
+
+            ul{
+                width:100%;
+                flex-direction:column;
+                display:none;
+                text-align:center;
+            }
+
+            #menu:checked~ul{
+                display:flex;
+            }
+
+            #pic{
+                flex-direction:column;
+            }
+
+            #pic img{
+                width:200px;
+            }
+
+            #pic p{
+                font-size:50px;
+                text-align:center;
+            }
+
+            .card{
+                grid-template-columns:1fr;
+            }
+
+            video{
+                width:90%;
+                margin-left:10px;
+            }
+
+            main p{
+                font-size:18px;
+                line-height:35px;
+            }
+
+        }
+
+    </style>
+ <link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div id="link">
+            <img src="v.png">
+            <p>Fresh Juice</p>
+        </div>
+
+        <input type="checkbox" id="menu">
+
+        <label for="menu" id="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">location</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<p class="dev">Developed by vaishu,víno</p>
+
+<main>
+
+    <div id="pic">
+
+        <img src="p1.png">
+
+        <p>fresh juice</p>
+
+        <img src="p4.png">
+
+    </div>
+
+    <p>
+Fresh juice is the natural liquid squeezed from fruits and vegetables. It gives your body quick energy and healthy vitamins. However, juices lose their nutrients quickly through heat and air. To keep it fresh, drink it right after making it or buy cold-pressed juice from the store.Why Fresh Juice is Good for YouFast Energy: Fruit sugars break down easily to give you a quick boost.Vitamins: One cup of fresh orange juice gives you almost half your daily Vitamin C.Healthy Heart: Ingredients like pomegranate and tomato juice are packed with potassium. This nutrient helps keep your blood pressure normal
+
+        <a href="https://www.youtube.com/shorts/-OseW_yqKaQ">
+            How to make fresh juice
+        </a>
+
+    </p>
+
+    <video controls>
+        <source src="vai.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="vino.mp3">
+    </audio>
+
+    <p style="text-align:center;font-weight:900;">
+        Order Now
+    </p>
+
+    <div class="card">
+
+        <div class="card1">
+            <img src="p5.png">
+            <p><del>250</del> 150</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card1">
+            <img src="p6.png">
+            <p><del>650</del> 500</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card1">
+            <img src="p2.png">
+            <p><del>100</del> 90</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card1">
+            <img src="p3.png">
+            <p><del>200</del> 165</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</main>
+
+<form>
+
+    <fieldset>
+
+        <legend>fresh juice Order Form</legend>
+
+        <p>
+            <label>Name</label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label>Password</label>
+            <input type="password">
+        </p>
+
+        <p>
+            <label>Quantity</label>
+            <input type="number" min="1" max="10">
+        </p>
+
+        <label>
+            <input type="radio" name="biryani">
+            fresh juice
+        </label>
+
+        <label>
+            <input type="radio" name="biryani">
+           icecream
+        </label>
+
+        <p>
+            <textarea cols="40" rows="5"></textarea>
+        </p>
+
+        <button type="submit">Order Now</button>
+
+    </fieldset>
+
+</form>
+
+<footer>
+
+    <p>© 2026 fresh juice</p>
+
+</footer>
+
+</body>
+
+</html>
